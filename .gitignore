@@ -1,0 +1,6 @@
+__pycache__/
+coordinates.crx
+livenshtein_distance.py
+test_1.py
+test_sms.py
+/selenium_test_env_1/
