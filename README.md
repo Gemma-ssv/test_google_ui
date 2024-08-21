@@ -41,6 +41,26 @@ git clone https://github.com/username/repository.git
 pip install -r requirements.txt
 ```
 
+>Замените соответсвующие передаваемые аргументы в функциях
+```python
+# ВАРИАНТ ИСПОЛЬЗОВАНИЯ
+
+# СОЗДАЁМ ФАЙЛ
+file = create_excel_file('test.xlsx')
+
+# ОБНОВЛЯЕМ ПАРОЛЬ
+new_passw = change_email_password('test@gmail.com','test_password', 'new_test_password')
+
+# ОБНОВЛЯЕМ ИМЯ И ФАМИЛИЯ
+change_name_and_surname_to_email('test@gmail.com', new_passw,'ТЕСТ', 'ТЕСТОВ')
+
+# ПОЛУЧАЕМ ОБНОВЛЕННЫЕ ДАННЫЕ
+data_list = get_data_email('test@gmail.com', new_passw)
+
+# СОХРАНЯЕМ ДАННЫЕ В ФАЙЛ
+save_data_email(file, data_list)
+```
+
 >Откройте консоль и запустите файл `test_google.py`.
 
 ```bash
